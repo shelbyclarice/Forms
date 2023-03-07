@@ -17,19 +17,9 @@ p {
 
 form {
   margin-left: 20px;
-  color: rgb(46, 46, 76);
+  color: rgb(39, 39, 119);
 }
 
 label {
   font-size: 20px;
-}
-
-.button {
-  background-color: blue;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
 }

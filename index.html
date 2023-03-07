@@ -12,11 +12,12 @@
 
     <p>The select element defines a drop-down list:</p>
 
-    <!---->
+    <!--school form-enter name-->
     <form id="school-form" method="post" form onsubmit="processPrefs()">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required /><br />
 
+          <!--school form-enter grade-->
       <label for="grade">Grade:</label>
       <select id="grade" name="grade" required>
         <option value="6">6th Grade</option>
@@ -24,15 +25,18 @@
         <option value="8">8th Grade</option></select
       ><br />
 
+          <!--school form-enter age-->
       <label for="age">Age:</label>
       <input type="number" id="age" name="age" /><br />
 
+          <!--school form-enter gender-->
       <label for="gender">Gender:</label>
       <input type="radio" id="male" name="gender" value="male" />
       <label for="male">Male</label>
       <input type="radio" id="female" name="gender" value="female" />
       <label for="female">Female</label><br>
 
+          <!--school form-enter School from drop down menu-->
       <label for="school">School:</label>
       <select id="school" name="school" required>
         <option value="">School</option>
@@ -41,12 +45,15 @@
         <option value="emerald_cove">Emerald Cove</option></select
       ><br />
 
+          <!--school form-enter email-->
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required></input><br><br>
 
+          <!--button to submit form-->
       <input type="submit" value="submit"></input>
     </form><br><br>
 
+              <!--button to find out info for the three schools-->
     <input type="button" name="button" onclick=" info_WellingtonLandings()"value="info on Wellington Landings"/><br>
 
     <input type="button" name="button" onclick=" info_PoloPark()"value="info on Polo Park"/><br>
@@ -54,14 +61,7 @@
     <input type="button" name="button" onclick=" info_EmeraldCove()"value="info on Emerald Cove"/><br>
 
     <script>
-        
-        /* Assemble all the form inputs into string and put into a waiting list */
-/*
-        funtion processPrefs () {
-            var string_of_Prefs = "";
-            prefs = document.school-form.value + "," + prefs = document.grade.value + "," + prefs = document.age.value + "," + prefs = document.gender.value + "," + prefs = document.school.value + ","
-        }
-*/
+    
         // Add event listener for form submission
         document.getElementById("school-form").addEventListener("submit"), function (event) {
             event.preventDefault(); // prevent form from submitting normally
